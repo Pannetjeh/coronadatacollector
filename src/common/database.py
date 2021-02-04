@@ -1,7 +1,7 @@
 import pymongo
 
 class Database(object):
-    URI = "mongodb+srv://rubenlooije:0103Sara@microblog-application.kiw0s.mongodb.net/test"
+    URI = "mongodb+srv://<username>:<password>@microblog-application.kiw0s.mongodb.net/test"
     DATABASE = None
 
     # Initialize the database
