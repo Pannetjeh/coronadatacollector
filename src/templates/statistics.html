@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <script type="text/javascript" src={{cdn_js | safe}}> </script>
+    <h2> {{ email }}</h2>
+    <section>
+    <h2> Mensen met Corona per provincie</h2>
+{{ script1 | safe}} 
+{{ div1 | safe}}
+    </section>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+# INPUT FORM
+    <form class="form" action="/coronadatanew" method="POST">
+        <label class="form_label"> Did you have the corona virus?</label>
+        <input class="form_input" type="text" id="corona" name="corona" required>
+        <label class="form_label"> How close relations do you know have have/had the virus?</label>
+        <input class="form_input" type="number" id="corona_relations" name="corona_relations" required>
+        <label class="form_label"> What's your age?</label>
+        <input class="form_input" type="number" min="0", max="110" id="age" name="age" required>
+        <label class="form_label"> Gender?</label>
+        <input class="form_input" type="text" id="gender" name="gender" required>
+        <label class="form_label"> What province do you life? </label>
+        <input class="form_input" type="text" id="province" name="province" required>
+        
+        
+        <input type="submit" id="submit-button">
+    </form>
+
+{% endblock %}

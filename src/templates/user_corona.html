@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2> {{ email }}</h2>
+    <section>
+    <p>
+        <ul>
+            <li> Had Corona? : {{ coronadata.corona}} </li>
+            <li> How many have/had corona?: {{ coronadata.corona_relations}}</li>
+            <li> Age: {{ coronadata.age}}</li>
+            <li> Gender: {{ coronadata.gender}}</li>
+            <li> Province: {{ coronadata.province}}</li>
+        </ul>
+    </p>
+    <a href="coronadatanew"> Change information?</a></li>
+    <section> 
+{% endblock %}
